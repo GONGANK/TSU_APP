@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "915538990711",
+    "project_id": "tsu-study-stam",
+    "storage_bucket": "tsu-study-stam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915538990711:android:805a5e509aac7c87f81872",
+        "android_client_info": {
+          "package_name": "com.example.tsustudystam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915538990711-vch70qnehcq9h2j4cih2t6gek2h429vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tsustudystam",
+            "certificate_hash": "7209e62e24d12be22323754f36e895d12d9d23db"
+          }
+        },
+        {
+          "client_id": "915538990711-djaskq2bjn1ldm6athsgnl201um2ovi3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcS_l2kcmkUezt2UIh7c3O1rUEbaPG9tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915538990711-djaskq2bjn1ldm6athsgnl201um2ovi3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

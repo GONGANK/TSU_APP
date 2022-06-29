@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aboutus">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/TSUColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="387dp"
+        android:layout_height="703dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+        <TextView
+            android:id="@+id/TEXT_STATUS_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+
+            android:text="The first national university in the Caucasus was opened in Georgia in 1918, called Tfilisis Universiteti, laying the foundation for a European-type institution based on Georgian educational traditions.
+The idea for the university first emerged in the early 19th century as the struggle for liberation from the Russian empire intensified. A new generation was, led by the great Georgian public figure Ilia Chavchavadze, who initiated a new stage of spiritual revival in the history of our country beginning in the 1860s. Real possibilities for establishing an institution of higher learning appeared when the Nobiliary Manorial Estate Bank was founded in Tbilisi. It was the only bank in the Russian empire, that contributed to promote the cultural, educational and economic interests of the nation.
+From the beginning of the 20th century a Georgian Privat Docent at the University of Saint Petersburg, Ivane Javakhishvili, who had undertaken his studies in Saint Petersburg, began to organize the foundation of the Georgian University. From the very first days of the February 1917 Revolution, Javakhishvili, who was still in Saint Petersburg, began his activities to open an institution in Tbilisi. The first gathering of the founders of the University Society was held in the apartment of Petre Melikishvili in Tbilisi, on May 12 that year, chaired by Ekvtime Takaishvili, when they established the Georgian Free University Society. This Society would later play a key role in the foundation of the first University.
+In the autumn of 1917 the founders of the University intensified their efforts and first established one faculty, the Faculty of Philosophy, which would include humanities as well as natural sciences and mathematics. In late December, the Georgian press published an article about the enrollment of the first students at the Georgian University.
+Thus, the first university in the Caucasus opened its doors on January 26, 1918, the day of the commemoration of King David the Builder (later this commemoration was established on February 8). Nominated by Ivane Javakhishvili, Petre Melikishvili was elected by the Council of Professors as first Rector of the University. Ivane Javakhishvili took charge of the Faculty of Philosophy.
+The following persons became Lecturers at the newly established university: Ivane Javakhishvili, Iustine Abuladze, Giorgi Akhvlediani, Philipe Gogichaishvili, Ekvtime Takaishvili, Korneli Kekelidze, Shalva Nutsubidze, Elisabed Bagrationi-Orbeliani, Dimitri Uznadze, Vanda Gambashidze, Ilia Kipshidze, Ioseb Kipshidze, Akaki Shanidze, Andria Benashvili, Andria Razmadze, Ivane Beritashvili, and Grigol Tsereteli.
+In 1989 Tbilisi State University was renamed after its founder, Ivane Javakhishvili.
+Today Ivane Javakhishvili Tbilisi State University is one of the first and most respected scientific-research institutions of Georgia and carries out about 200 local and international scientific grant programs annually.
+Tbilisi State University, or TSU, is one of the largest higher educational institutions, with approximately 22,000 students studying in seven faculties. Along with Bachelor’s, Master’s and Doctoral programs, the university implements higher vocational education courses, as well as short- and long-term certification programs. Working in close cooperation with foreign universities, Georgian students can participate in exchanges and joint international educational programs to earn double academic degrees.
+Tbilisi State University is an active member of leading international education networks and is proud of its alumni, many of whom are now prominent professors, scientists and graduates, working in partnership with the European community, sometimes with worldwide recognition.
+TSU offers a wide variety of degree programs at undergraduate, graduate and doctoral levels, and short-term courses in English that attract students from all over the world. The internationalization of TSU is fast-paced and aims at creating a multicultural environment that will enhance teaching and research opportunities. TSU promotes equality of access to education, and believes in engaging and valuing all students and staff." />
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
