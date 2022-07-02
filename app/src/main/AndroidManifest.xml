@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TSUSTUDYSTAM">
         <activity
-            android:name=".Ourlocation"
-            android:exported="false" />
-        <activity
-            android:name=".Faculties"
+            android:name=".Registrationform"
             android:exported="false" />
         <activity
             android:name=".Privace"
@@ -35,6 +32,15 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Faculties"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

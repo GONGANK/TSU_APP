@@ -28,15 +28,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        android:animateLayoutChanges="true">
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="ზუსტ და საბუნებისმეტყველო მეცნიერებათა ფაკულტეტი"
-            android:textCursorDrawable="@color/black" />
+            android:text="The Faculty of Exact and Natural Sciences"
+            android:textCursorDrawable="@color/black"
+            android:fadeScrollbars="true"/>
 
         <Space
             android:layout_width="10dp"
@@ -47,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="ჰუმანიტარულ მეცნიერებათა ფაკულტეტი"
+            android:text="faculty of humanities"
             android:textCursorDrawable="@color/red" />
 
         <Space
@@ -59,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="სოციალურ და პოლიტიკურ მეცნიერებათა ფაკულტეტი"
+            android:text="faculty of social and political science"
             />
 
         <Space
@@ -71,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="ფსიქოლოგიის და განათლების მეცნიერებათა ფაკულტეტი" />
+            android:text="faculty of psychology and education sciences" />
 
         <Space
             android:layout_width="10dp"
@@ -82,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="ეკონომიკისა და ბიზნესის ფაკულტეტი" />
+            android:text="faculty of economics and business" />
 
         <Space
             android:layout_width="10dp"
@@ -93,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="მედიცინის ფაკულტეტი" />
+            android:text="faculty of medicine" />
 
         <Space
             android:layout_width="10dp"
@@ -104,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="იურიდიული ფაკულტეტი" />
+            android:text="faculty of law" />
     </LinearLayout>
 
 
