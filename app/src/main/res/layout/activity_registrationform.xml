@@ -8,6 +8,18 @@
     tools:context=".Registrationform">
 
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/TSUColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
     <EditText
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
@@ -19,7 +31,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
-        android:width="150dp"/>
+        android:width="250dp"
+        android:height="40dp"/>
 
     <EditText
         android:id="@+id/textView15"
@@ -32,32 +45,33 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         android:layout_marginTop="20dp"
         android:textAlignment="center"
-        android:width="150dp"/>
+        android:width="250dp"
+        android:height="40dp"/>
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="150dp"
-        android:layout_height="25dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:width="150dp"
         android:background="@color/white"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="150dp"
-        android:layout_height="25dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:width="150dp"
+        android:width="250dp"
         android:background="@color/white"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
     <EditText
         android:id="@+id/textView16"
@@ -67,10 +81,24 @@
         android:hint="Id "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
         android:layout_marginTop="20dp"
         android:textAlignment="center"
-        android:width="150dp"/>
+        android:width="250dp"
+        android:height="40dp"/>
+
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:width="150dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
 
     <TextView
@@ -81,5 +109,22 @@
         android:text="TSU Faculty Registration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3"
+        android:theme="@style/Theme.Material3.DynamicColors.Light"
+        android:textSize="30dp"
+        style="@style/CardView.Dark"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

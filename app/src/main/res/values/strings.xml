@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">TSU STUDY STAM</string>
     <string name="selected_item">Selected item:</string>
+    <string name="selected_item2">Selected item:</string>
 
     <string-array name="Faculties">
-        <item>Select ...</item>
+        <item>Select Fac...</item>
         <item>The Faculty of Exact and Natural Sciences</item>
         <item>faculty of humanities</item>
         <item>faculty of social and political science</item>
@@ -13,8 +14,9 @@
         <item>faculty of law</item>
     </string-array>
 
+
     <string-array name="Nationality">
-        <item>Select ...</item>
+        <item>Select Nat...</item>
         <item>Georgia</item>
         <item>Italy</item>
         <item>Uk</item>
@@ -23,5 +25,14 @@
         <item>Turkey</item>
         <item>Canada</item>
     </string-array>
+
+
+    <string-array name="Degree">
+        <item>Select Deg...</item>
+        <item>Bachelors Degree</item>
+        <item>Masters Degree</item>
+        <item>Doctoral Degree</item>
+    </string-array>
+
 
 </resources>
