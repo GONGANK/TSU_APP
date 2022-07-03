@@ -9,6 +9,7 @@ import android.text.method.PasswordTransformationMethod
 import android.util.Log
 import android.view.View
 import android.widget.*
+import com.google.android.gms.common.api.internal.RegisterListenerMethod
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 

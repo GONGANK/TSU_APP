@@ -1,21 +1,27 @@
 package com.example.tsustudystam
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.Toast
+import android.widget.*
 
 class Registrationform : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrationform)
 
+        val button1 = findViewById<ImageView>(R.id.imageButton)
+
         val languages = resources.getStringArray(R.array.Faculties)
         val languages2 = resources.getStringArray(R.array.Nationality)
         val languages3 = resources.getStringArray(R.array.Degree)
+
+        button1.setOnClickListener {
+            val intent = Intent(this, Faculties::class.java)
+            startActivity(intent)
+        }
+
 
         // access the spinner
         val spinner = findViewById<Spinner>(R.id.spinner1)
