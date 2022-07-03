@@ -1,12 +1,16 @@
 package com.example.tsustudystam
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
+import android.util.Log
 import android.view.View
 import android.widget.*
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         val var1 = findViewById<TextView>(R.id.editTextTextEmailAddress)
         val var4 = findViewById<EditText>(R.id.editTextTextPassword)
+
 
         button1.setOnClickListener {
             val intent = Intent(this, Continuewithoutlogin::class.java)
@@ -69,6 +74,31 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        val auth = Firebase.auth
+        val intent = intent
+        val emailLink = intent.data.toString()
 
+
+// Confirm the link is a sign-in with email link.
+        if (auth.isSignInWithEmailLink(emailLink)) {
+            // Retrieve this from wherever you stored it
+            val email = "someemail@domain.com"
+
+            // The client SDK will parse the code from the link for you.
+            auth.signInWithEmailLink(email, emailLink)
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        Log.d(TAG, "Successfully signed in with email link!")
+                        val result = task.result
+                        // You can access the new user via result.getUser()
+                        // Additional user info profile *not* available via:
+                        // result.getAdditionalUserInfo().getProfile() == null
+                        // You can check if the user is new or existing:
+                        // result.getAdditionalUserInfo().isNewUser()
+                    } else {
+                        Log.e(TAG, "Error signing in with email link", task.exception)
+                    }
+                }
+        }
         }
     }
