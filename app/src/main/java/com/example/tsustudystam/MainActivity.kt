@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Registration::class.java)
             startActivity(intent)
         }
-        val var2 = "nika"
-        val var3 = "gng"
+        val var2 = "ngongadze2000@gmail.com"
+        val var3 = "Gonga2000"
 
         button4.setOnClickListener {
 
