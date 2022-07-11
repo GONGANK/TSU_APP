@@ -7,9 +7,28 @@ import android.view.View
 import android.widget.*
 
 class Registrationform : AppCompatActivity() {
+
+    lateinit var gname : EditText
+    lateinit var gsurname : EditText
+    lateinit var gbtn : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrationform)
+
+        gname = findViewById(R.id.textView14)
+        gsurname =findViewById(R.id.textView15)
+        gbtn = findViewById(R.id.button7)
+
+        gbtn.setOnClickListener{
+            val bundle = Bundle()
+            bundle.putString("name", gname.text.toString())
+            bundle.putString("surname", gsurname.text.toString())
+            val intent = Intent(this, admin::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        }
+
 
         val button1 = findViewById<ImageView>(R.id.imageButton)
 

@@ -44,13 +44,21 @@ class MainActivity : AppCompatActivity() {
         }
         val var2 = "ngongadze2000@gmail.com"
         val var3 = "Gonga2000"
+        val var5 = "Admin"
 
         button4.setOnClickListener {
 
-            if (var1.getText().toString() == var2 && var4.getText().toString()== var3) {
+            if (var1.getText().toString() == var2 && var4.getText().toString() == var3) {
                 val intent = Intent(this, Continuewithoutlogin::class.java)
                 startActivity(intent)
             }
+            else if(var1.getText().toString() == var5 && var4.getText().toString() == var5)
+            {
+                val intent = Intent(this, admin::class.java)
+                startActivity(intent)
+
+            }
+
             else
             {
                 val toast1 = Toast.makeText(applicationContext,"incorrect Email or password", Toast.LENGTH_LONG)

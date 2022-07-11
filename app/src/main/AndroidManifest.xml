@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TSUSTUDYSTAM">
         <activity
+            android:name=".admin"
+            android:exported="false" />
+        <activity
             android:name=".login2"
             android:exported="false" />
         <activity
