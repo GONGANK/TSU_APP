@@ -9,6 +9,8 @@ import android.widget.TextView
 class admin : AppCompatActivity() {
     lateinit var aname : TextView
     lateinit var asurname :TextView
+    lateinit var  aid : TextView
+    lateinit var anationality :TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +26,14 @@ class admin : AppCompatActivity() {
 
         aname = findViewById(R.id.textView14)
         asurname = findViewById(R.id.textView23)
+        aid = findViewById(R.id.textView21)
+        anationality =findViewById(R.id.textView22)
         val bundle = intent.extras
         if (bundle != null){
-            aname.text = "name = ${bundle.getString("name")}"
-            asurname.text = "surname = ${bundle.getString("surname")}"
+            aname.text = "name : ${bundle.getString("name")}"
+            asurname.text = "surname : ${bundle.getString("surname")}"
+            aid.text = "id : ${bundle.getString("id")}"
+            aid.text = "nationality : ${bundle.getString("nationality")}"
         }
 
 

@@ -2,6 +2,7 @@ package com.example.tsustudystam
 
 import android.content.ContentValues.TAG
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -21,6 +22,9 @@ class Registration : AppCompatActivity() {
 
         val button1 = findViewById<ImageButton>(R.id.imageButton)
         val button2 = findViewById<Button>(R.id.button6)
+        val button3 = findViewById<ImageView>(R.id.imageView2)
+        val button4 = findViewById<ImageView>(R.id.imageView4)
+        val button5 = findViewById<ImageView>(R.id.imageView5)
         val inputmail1 = findViewById<EditText>(R.id.editTextTextEmailAddress2)
         val inputpass1 = findViewById<EditText>(R.id.editTextTextPassword2)
         val inputpass2 = findViewById<EditText>(R.id.editTextTextPassword3)
@@ -32,6 +36,23 @@ class Registration : AppCompatActivity() {
 
         when {
         }
+
+
+        button3.setOnClickListener {
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/"))
+            startActivity(i)
+        }
+
+        button4.setOnClickListener {
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"))
+            startActivity(i)
+        }
+
+        button5.setOnClickListener {
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://accounts.google.com/servicelogin/webreauth?service=googleplay&flowName=GlifWebSignIn&flowEntry=ServiceLogin"))
+            startActivity(i)
+        }
+
        /* button2.setOnClickListener {
             val actionCodeSettings = actionCodeSettings {
                 // URL you want to redirect back to. The domain (www.example.com) for this

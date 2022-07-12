@@ -10,6 +10,10 @@ class Registrationform : AppCompatActivity() {
 
     lateinit var gname : EditText
     lateinit var gsurname : EditText
+    lateinit var gid :EditText
+    lateinit var gnationality: Spinner
+    lateinit var gfaculty: Spinner
+    lateinit var gdegree: Spinner
     lateinit var gbtn : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,12 +22,20 @@ class Registrationform : AppCompatActivity() {
 
         gname = findViewById(R.id.textView14)
         gsurname =findViewById(R.id.textView15)
+        gid = findViewById(R.id.textView16)
+        gnationality = findViewById(R.id.spinner1)
+        gfaculty = findViewById(R.id.spinner2)
+        gdegree = findViewById(R.id.spinner3)
         gbtn = findViewById(R.id.button7)
 
         gbtn.setOnClickListener{
             val bundle = Bundle()
             bundle.putString("name", gname.text.toString())
             bundle.putString("surname", gsurname.text.toString())
+            bundle.putString("id", gid.text.toString())
+            bundle.putString("nationality", gnationality.toString())
+            bundle.putString("faculty", gfaculty.toString())
+            bundle.putString("degree", gdegree.toString())
             val intent = Intent(this, admin::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
